@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     // Create a function that creates the start button and initial screen
     
     function initialScreen() {
@@ -45,7 +46,7 @@ $(document).ready(function() {
     
     function generateLossDueToTimeOut() {
         unansweredTally++;
-        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer was: " + correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='img/x.png'>";
+        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>You ran out of time!  The correct answer was: " + correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='assets/images/Jinn.jpg'>";
         $(".mainArea").html(gameHTML);
         setTimeout(wait, 4000);  //  change to 4000 or other amount
     }
