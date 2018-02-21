@@ -97,8 +97,9 @@ $(document).ready(function() {
     }
     
     function finalScreen() {
-        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>All done! Great Job, here are your Results!" + "</p>" + "<p class='summary-correct'>Correct Answers: " + correctTally + "</p>" + "<p>Wrong Answers: " + incorrectTally + "</p>" + "<p>Unanswered: " + unansweredTally + "</p>" + "<p class='text-center reset-button-container'><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Reset The Quiz!</a></p>";
+        gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>All done! Great Job, here are your Results!" + "</p>" + "<p class='summary-correct'>Correct Answers: " + correctTally + "</p>" + "<p>Wrong Answers: " + incorrectTally + "</p>" + "<p>Unanswered: " + unansweredTally + "</p>" + "<p class='text-center reset-button-container'><a class='btn btn-primary btn-lg btn-block reset-button' href='#' role='button'>Reset The Quiz!</a></p><iframe width='560' height='315' src='https://www.youtube.com/embed/Qy85G-EuKQ4' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>";
         $(".mainArea").html(gameHTML);
+        
     }
     
     function resetGame() {
@@ -116,7 +117,7 @@ $(document).ready(function() {
     var counter = 30;
     var questionArray = ["Who kills Jabba the Hut?", "In which movie did Han Solo and Luke Skywalker free Princess Leia from the Death Star?", "In which movie did the Battle of Hoth take place?", "What planet is Princess Leia from?", "In which Star Wars movie does Liam Neesom play Qui-Gon Jinn?", "In Episode 4, A New Hope, Who is the first character to speak?", "How tall was the actor who played Chewbacca?", "Who said, 'I have a bad feeling about this?"];
     var answerArray = [["Princess Leia", "C3PO", "R2D2", "Lando"], ["Empire Strikes Back","A New Hope","Return of the Jedi","The Last Jedi"], ["The Last Jedi", "Rogue One", "The Empire Strikes Back", "Return of the Jedi"], ["Jakku","Jedha","Alderaan","Yavin"], ["A New Hope", "Attack of the Clones", "The Force Awakens", "The Phantom Menance"], ["C3PO","R2D2","Darth Vader","Princess Leia"], ["6'10", "7'2", "7'6", "6'8"], ["Luke Skywalker","Han Solo","Obi Wan Kenobi","All of the above"]];
-    var imageArray = ["<img class='right-align img-right' width='400px' src='assets/images/leia.jpg'>", "<img class='center-block img-right' src='assets/images/Falcon.jpg'>", "<img class='center-block img-right' src='assets/images/hoth.jpg'>", "<img class='center-block img-right' src='assets/images/Vader.jpg'>", "<img class='center-block img-right' src='assets/images/faceoff.jpg'>", "<img class='center-block img-right' src='assets/images/Anakin&Obi.jpg'>", "<img class='center-block img-right' src='assets/images/Yoda.jpg'>", "<img class='center-block img-right' src='assets/images/starwars1.jpg'>"];
+    var imageArray = ["<img class='right-align img-right' width='600px' src='assets/images/leia.jpg'>", "<img class='center-block img-right' src='assets/images/Falcon.jpg'>", "<img class='center-block img-right' src='assets/images/hoth.jpg'>", "<img class='center-block img-right' src='assets/images/Vader.jpg'>", "<img class='center-block img-right' src='assets/images/faceoff.jpg'>", "<img class='center-block img-right' src='assets/images/Anakin&Obi.jpg'>", "<img class='center-block img-right' src='assets/images/Yoda.jpg'>", "<img class='center-block img-right' src='assets/images/starwars1.jpg'>"];
     var correctAnswers = ["A. Princess Leia", "B. A New Hope", "C. The Empire Strikes Back", "C. Alderaan", "D. The Phantom Menance", "A. C3PO", "B. 7'2", "D. All of the above"];
     var questionCounter = 0;
     var selecterAnswer;
