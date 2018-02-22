@@ -125,4 +125,4 @@ $(document).ready(function() {
     var correctTally = 0;
     var incorrectTally = 0;
     var unansweredTally = 0;
-    var clickSound = new Audio("assets/images/binarySunset.mp3");
+    var clickSound = new Audio("assets/images/BinarySunset.mp3");
